@@ -1,0 +1,27 @@
+# Alojamiento en Netlify (plan gratuito). Netlify ejecuta el build y publica la carpeta dist.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# La web es de una sola página: todas las rutas (/obra, /musica, /legal…) cargan index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Imágenes, audio y archivos con huella en el nombre se pueden guardar en caché mucho tiempo
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+[[headers]]
+  for = "/media/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+[[headers]]
+  for = "/audio/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Rymone</title>
+    <meta name="description" content="Rymone: cuadros y otras creaciones. Explora la obra y consulta por cualquier pieza." />
+    <meta name="theme-color" content="#130a16" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" as="image" href="/media/firma-brillantes-1200.webp" imagesrcset="/media/firma-brillantes-600.webp 600w, /media/firma-brillantes-1200.webp 1200w" imagesizes="(min-width: 700px) 560px, 82vw" />
+    <link rel="preload" as="image" href="/media/lettering-1800.webp" imagesrcset="/media/lettering-900.webp 900w, /media/lettering-1800.webp 1800w" imagesizes="(min-width: 1150px) 1100px, 96vw" />
+  </head>
+  <body>
+    <canvas class="atmos" aria-hidden="true" data-atmos></canvas>
+
+    <!-- Pantalla de entrada -->
+    <div class="gate" data-gate role="dialog" aria-modal="true" aria-labelledby="gate-title">
+      <div class="gate__inner">
+        <div class="firma" id="gate-title" role="img" aria-label="Firma de Rymone" data-firma>
+          <span class="firma__glow" aria-hidden="true"></span>
+          <span class="firma__art" data-firma-art>
+            <img class="firma__img" src="/media/firma-brillantes-1200.webp" srcset="/media/firma-brillantes-600.webp 600w, /media/firma-brillantes-1200.webp 1200w" sizes="(min-width: 700px) 560px, 82vw" width="1200" height="827" alt="" fetchpriority="high" decoding="async" draggable="false">
+            <span class="firma__shine" aria-hidden="true"></span>
+          </span>
+        </div>
+        <button class="gate__enter" type="button" data-gate-enter>Entrar <span aria-hidden="true">→</span></button>
+      </div>
+      <span class="gate__pop" aria-hidden="true" data-gate-pop></span>
+    </div>
+
+    <a class="skip" href="#main">Saltar al contenido</a>
+
+    <header class="bar" data-bar>
+      <a class="brand" href="/" data-link aria-label="Rymone, marca registrada, inicio"><span class="brand__text">Rymone</span><img class="brand__logo" src="/media/logo-3-400.webp" width="400" height="135" alt="" decoding="async"><sup class="reg">®</sup></a>
+      <nav class="nav" aria-label="Principal">
+        <ul class="nav__list">
+          <li><a href="/" data-link data-nav="inicio" data-magnet>Inicio</a></li>
+          <li><a href="/obra" data-link data-nav="obra" data-magnet>Obra</a></li>
+          <li><a href="/musica" data-link data-nav="musica" data-magnet>Música</a></li>
+          <li><a href="/sobre-mi" data-link data-nav="sobre-mi" data-magnet>Sobre mí</a></li>
+          <li><a href="/contacto" data-link data-nav="contacto" data-magnet>Contacto</a></li>
+        </ul>
+        <span class="nav__mark" aria-hidden="true" data-nav-mark><i></i></span>
+      </nav>
+    </header>
+
+    <div class="progress" aria-hidden="true"><span data-progress></span></div>
+
+    <main id="main" tabindex="-1" data-view></main>
+
+    <div class="drip" aria-hidden="true" data-drip>
+      <svg viewBox="0 0 100 120" preserveAspectRatio="none">
+        <path data-drip-path d="" />
+      </svg>
+    </div>
+    <p class="sr-only" aria-live="polite" data-announcer></p>
+
+    <noscript>
+      <div class="noscript">
+        <p>Esta web necesita JavaScript para la experiencia completa. La obra de Rymone: <a href="/media/obra-01-925.webp">Obra 01</a> y <a href="/media/obra-02-1023.webp">Obra 02</a>.</p>
+      </div>
+      <style>.gate { display: none !important; }</style>
+    </noscript>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

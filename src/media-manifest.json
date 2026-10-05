@@ -1,0 +1,175 @@
+{
+  "obra-01": {
+    "width": 925,
+    "height": 768,
+    "widths": [
+      640,
+      925
+    ]
+  },
+  "obra-02": {
+    "width": 1023,
+    "height": 502,
+    "widths": [
+      640,
+      1023
+    ]
+  },
+  "obra-03": {
+    "width": 1348,
+    "height": 677,
+    "widths": [
+      640,
+      1100,
+      1348
+    ]
+  },
+  "personaje-1": {
+    "width": 499,
+    "height": 1441,
+    "widths": [
+      360,
+      499
+    ]
+  },
+  "personaje-2": {
+    "width": 703,
+    "height": 1452,
+    "widths": [
+      360,
+      703
+    ]
+  },
+  "personaje-3": {
+    "width": 689,
+    "height": 1456,
+    "widths": [
+      360,
+      689
+    ]
+  },
+  "personaje-4": {
+    "width": 640,
+    "height": 1452,
+    "widths": [
+      360,
+      640
+    ]
+  },
+  "lettering": {
+    "width": 1872,
+    "height": 917,
+    "widths": [
+      900,
+      1800
+    ]
+  },
+  "firma-brillantes": {
+    "width": 1236,
+    "height": 852,
+    "widths": [
+      600,
+      1200
+    ]
+  },
+  "logo-1": {
+    "width": 1928,
+    "height": 541,
+    "widths": [
+      400,
+      900,
+      1600
+    ]
+  },
+  "logo-3": {
+    "width": 1861,
+    "height": 626,
+    "widths": [
+      400,
+      900,
+      1600
+    ]
+  },
+  "titulo-obra": {
+    "width": 1641,
+    "height": 750,
+    "widths": [
+      500,
+      1000,
+      1600
+    ]
+  },
+  "titulo-musica": {
+    "width": 1668,
+    "height": 728,
+    "widths": [
+      500,
+      1000,
+      1600
+    ]
+  },
+  "cd-1": {
+    "width": 1036,
+    "height": 912,
+    "widths": [
+      420,
+      840
+    ]
+  },
+  "cd-2": {
+    "width": 1036,
+    "height": 912,
+    "widths": [
+      420,
+      840
+    ]
+  },
+  "cd-3": {
+    "width": 1074,
+    "height": 951,
+    "widths": [
+      420,
+      840
+    ]
+  },
+  "cd-4": {
+    "width": 1076,
+    "height": 949,
+    "widths": [
+      420,
+      840
+    ]
+  },
+  "cd-5": {
+    "width": 1076,
+    "height": 952,
+    "widths": [
+      420,
+      840
+    ]
+  },
+  "obra-proxima": {
+    "width": 1300,
+    "height": 700,
+    "widths": [
+      640,
+      1100
+    ]
+  },
+  "cd-proximo": {
+    "width": 1036,
+    "height": 912,
+    "widths": [
+      420,
+      840
+    ]
+  },
+  "firma": {
+    "width": 2781,
+    "height": 1455,
+    "widths": [
+      700,
+      1400
+    ]
+  }
+}
