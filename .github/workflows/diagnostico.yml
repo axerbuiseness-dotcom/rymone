@@ -1,10 +1,14 @@
 name: diagnostico
 on: push
+permissions:
+  contents: write
 jobs:
   revisar:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - run: |
+          exec > >(tee -a resultado.txt) 2>&1
           for u in https://rymone.pages.dev/ https://rymoner.com/ https://www.rymoner.com/ https://rymone.pages.dev/js/app.js https://rymone.pages.dev/css/estilos.css; do
             echo "=== $u"; curl -sS -m 20 -D - -o /tmp/b "$u" | head -30; echo "bytes: $(wc -c </tmp/b)"; head -c 400 /tmp/b; echo; done
           dig +short NS rymoner.com; dig +short A rymoner.com
@@ -23,4 +27,7 @@ jobs:
               console.log(m.join('\n')); await p.close(); }
             await b.close(); })();
           JS
-          node p.js
+          node p.js 2>&1 | tee -a resultado.txt
+      - run: |
+          git config user.name diag; git config user.email diag@example.com
+          git add resultado.txt; git commit -m 'resultado [skip ci]'; git push
