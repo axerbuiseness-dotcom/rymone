@@ -424,6 +424,7 @@ body.cambiando-vista main { animation: sube 1.3s cubic-bezier(.2,.7,.2,1) .85s b
 .pista__borrosa { filter: blur(6px); opacity: .6; user-select: none; }
 .pista-bloqueada .pista__dur { display: inline-flex; align-items: center; gap: 8px; color: var(--lima); text-transform: uppercase; letter-spacing: .14em; }
 
+.aka { color: var(--plata-suave); }
 .album__fecha { margin: 14px 0 0; color: var(--lima); }
 
 /* botón de colaboración al final de Obra y Música */

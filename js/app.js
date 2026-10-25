@@ -28,6 +28,10 @@
     { titulo: 'Voy perdido', portada: 8, audio: 'audio/voy-perdido.mp3', dur: 153 }
   ];
 
+  // Los temas van firmados con el aka de Rymone en la música
+  var AKA = 'One';
+  function conAka(t) { return t + '<span class="aka"> - ' + AKA + '</span>'; }
+
   function ajustaCanvas(c) {
     var dpr = Math.min(window.devicePixelRatio || 1, 2);
     var r = c.getBoundingClientRect();
@@ -216,7 +220,7 @@
       var li = document.createElement('li');
       li.innerHTML = '<button type="button" class="pista" data-i="' + i + '">' +
         '<span class="pista__num">' + ('0' + (i + 1)).slice(-2) + '</span>' +
-        '<span class="pista__titulo">' + c.titulo + '</span>' +
+        '<span class="pista__titulo">' + conAka(c.titulo) + '</span>' +
         '<span class="pista__dur">' + (c.dur ? mmss(c.dur) : 'Pronto') + '</span></button>';
       lista.appendChild(li);
     });
@@ -234,7 +238,7 @@
       var c = CANCIONES[i], cambio = i !== actual; actual = i;
       botones.forEach(function (b, j) { b.setAttribute('aria-current', j === i ? 'true' : 'false'); });
       $('#rNum').textContent = ('0' + (i + 1)).slice(-2) + '';
-      $('#rTitulo').textContent = c.titulo;
+      $('#rTitulo').innerHTML = conAka(c.titulo);
       if (cambio) {
         disco.classList.remove('fuera', 'sonando');
         caja.classList.add('cambiando');
