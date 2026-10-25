@@ -13,21 +13,25 @@ jobs:
             echo "=== $u"; curl -sS -m 20 -D - -o /tmp/b "$u" | head -30; echo "bytes: $(wc -c </tmp/b)"; head -c 400 /tmp/b; echo; done
           dig +short NS rymoner.com; dig +short A rymoner.com
       - run: |
-          npm i playwright@1.47.2 >/dev/null 2>&1 && npx playwright install chromium >/dev/null 2>&1
+          npm i playwright@1.47.2 >/dev/null 2>&1 && npx playwright install --with-deps chromium webkit firefox >/dev/null 2>&1
           cat > p.js <<'JS'
-          const { chromium } = require('playwright');
-          (async () => { const b = await chromium.launch();
-            for (const u of ['https://rymone.pages.dev/', 'https://rymoner.com/']) {
-              const p = await b.newPage(); const m = [];
-              p.on('console', x => m.push(x.type() + ': ' + x.text())); p.on('pageerror', e => m.push('ERR ' + e.message));
-              p.on('requestfailed', r => m.push('FAIL ' + r.url() + ' ' + (r.failure() && r.failure().errorText)));
-              try { await p.goto(u, { timeout: 30000 }); await p.waitForTimeout(5000);
-                console.log(u, await p.evaluate(() => JSON.stringify({ bodyClass: document.body.className, vista: document.body.dataset.vista, bienvenida: !!document.getElementById('bienvenida'), scripts: [...document.scripts].map(s => s.src || s.type || 'inline').join(','), firma: document.querySelectorAll('#introFirma path').length, bg: getComputedStyle(document.body).backgroundColor }))); }
-              catch (e) { console.log(u, 'goto error', e.message); }
-              console.log(m.join('\n')); await p.close(); }
-            await b.close(); })();
+          const pw = require('playwright');
+          (async () => {
+            for (const [nombre, tipo, disp] of [['iphone-safari','webkit','iPhone 13'],['android-chrome','chromium','Pixel 5'],['mac-safari','webkit',null],['firefox','firefox',null]]) {
+              const b = await pw[tipo].launch(); const ctx = await b.newContext(disp ? pw.devices[disp] : {});
+              const p = await ctx.newPage(); const m = [];
+              p.on('console', x => m.push(x.type() + ': ' + x.text())); p.on('pageerror', e => m.push('ERR ' + e.message + ' ' + (e.stack||'').split('\n').slice(0,3).join(' | ')));
+              try { await p.goto('https://rymoner.com/', { timeout: 30000 }); await p.waitForTimeout(5000);
+                console.log(nombre, await p.evaluate(() => JSON.stringify({ bodyClass: document.body.className, firma: document.querySelectorAll('#introFirma path').length, entrar: document.getElementById('entrar') && getComputedStyle(document.getElementById('entrar')).opacity, bienvenidaBg: document.getElementById('bienvenida') && getComputedStyle(document.getElementById('bienvenida')).backgroundColor, num: (document.getElementById('cargaNum')||{}).textContent })));
+                await p.screenshot({ path: nombre + '.png' });
+                await p.click('#entrar', { timeout: 5000 }).catch(e => m.push('click ' + e.message)); await p.waitForTimeout(3000);
+                console.log(nombre, 'tras entrar', await p.evaluate(() => JSON.stringify({ bienvenida: !!document.getElementById('bienvenida'), paths: document.querySelectorAll('#boceto path').length })));
+                await p.screenshot({ path: nombre + '-dentro.png' });
+              } catch (e) { console.log(nombre, 'error', e.message); }
+              console.log(m.join('\n')); await b.close(); }
+          })();
           JS
           node p.js 2>&1 | tee -a resultado.txt
       - run: |
           git config user.name diag; git config user.email diag@example.com
-          git add resultado.txt; git commit -m 'resultado [skip ci]'; git push
+          git add resultado.txt *.png; git commit -m 'resultado [skip ci]'; git push
