@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rymone.es/sitemap.xml

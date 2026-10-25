@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rymone</title>
+<meta name="description" content="Rymone: graffiti, cuadros y música. Obra, singles y el álbum RYMONER, próximamente en 2027.">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="canonical" href="https://rymone.es/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Rymone">
+<meta property="og:title" content="Rymone · Obra y música">
+<meta property="og:description" content="Graffiti, cuadros y música. Álbum RYMONER, próximamente en 2027.">
+<meta property="og:url" content="https://rymone.es/">
+<meta property="og:image" content="https://rymone.es/media/compartir.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="fuentes/pirata-one-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fuentes/ibm-plex-mono-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/fuentes.css">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<!-- Bienvenida: la firma se pinta a rotulador y el telón sube -->
+<div class="bienvenida" id="bienvenida" role="dialog" aria-label="Bienvenida">
+  <div class="bienvenida__zona" id="introFirma" role="img" aria-label="Firma de Rymone"></div>
+  <p class="bienvenida__carga" id="carga" aria-hidden="true"><span id="cargaNum">000</span><span class="bienvenida__barra"><i id="cargaBarra"></i></span></p>
+  <button class="bienvenida__entrar" id="entrar" type="button">Entrar</button>
+  <svg class="bienvenida__curva" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path id="curva" d="M0 0 L100 0 L100 0 Q50 0 0 0 Z"/></svg>
+</div>
+
+<!-- Telón entre apartados -->
+<div class="telon" id="telon" aria-hidden="true"><span class="telon__firma" id="telonFirma"></span><span class="telon__marco"><span class="metal telon__t" id="telonT"></span></span></div>
+
+<header class="cabecera" id="cabecera">
+  <a class="cabecera__logo" id="logo" href="#inicio" aria-label="Rymone, ir al inicio"></a>
+  <nav class="cabecera__nav" aria-label="Secciones">
+    <a href="#obra" data-seccion="obra">Obra</a>
+    <a href="#musica" data-seccion="musica">Música</a>
+    <a href="#sobre-mi" data-seccion="sobre-mi">Sobre mí</a>
+    <a href="#contacto" data-seccion="contacto">Contacto</a>
+  </nav>
+</header>
+
+<main>
+  <!-- INICIO: el boceto se dibuja solo -->
+  <section class="inicio" id="inicio" aria-labelledby="inicio-t">
+    <h1 id="inicio-t" class="sr">Rymone</h1>
+    <div class="lienzo" id="lienzo">
+      <svg class="lienzo__boceto" id="boceto" role="img" aria-label="Boceto en tinta del nombre Rymone en letras pompa, con margaritas, destellos y una aureola"></svg>
+    </div>
+  </section>
+
+  <div class="cinta" aria-hidden="true">
+    <div class="cinta__pista"></div>
+  </div>
+
+  <!-- AVANCE: dos puertas, cada una abre su propio apartado -->
+  <section class="avance" id="avance" aria-label="Apartados">
+    <a class="puerta puerta--obra" href="#obra">
+      <span class="puerta__img"><img src="media/obra-1-sm.webp" alt="" width="640" height="568" loading="lazy" decoding="async"></span>
+      <span class="puerta__texto">
+        <span class="etiqueta puerta__num">01 · Cuadros</span>
+        <span class="metal metal--tinta puerta__titulo">Obra</span>
+        <span class="puerta__ir etiqueta">Entrar a la obra <i aria-hidden="true">→</i></span>
+      </span>
+    </a>
+    <a class="puerta puerta--musica" href="#musica">
+      <span class="puerta__img"><img src="media/album-sm.webp" alt="" width="600" height="600" loading="lazy" decoding="async"></span>
+      <span class="puerta__texto">
+        <span class="etiqueta puerta__num">02 · Singles y RYMONER</span>
+        <span class="metal puerta__titulo">Música</span>
+        <span class="puerta__ir etiqueta">Entrar a la música <i aria-hidden="true">→</i></span>
+      </span>
+    </a>
+  </section>
+
+  <!-- OBRA: los cuadros cuelgan en la misma pared que la web -->
+  <section class="obra" id="obra" aria-labelledby="obra-t">
+    <h2 id="obra-t" class="metal metal--tinta obra__titulo">Obra</h2>
+
+    <article class="cuadro">
+      <button type="button" class="cuadro__marco" data-ampliar="media/obra-1.webp" data-alt="Obra 01 a tamaño completo">
+        <img src="media/obra-1-sm.webp" srcset="media/obra-1-sm.webp 640w, media/obra-1.webp 1086w" sizes="(min-width: 900px) 52vw, 92vw" alt="Cuadro enmarcado en madera: letras pompa negras con contorno naranja y goteos, una aureola naranja encima, sobre una pintura de una figura con un ramo de calas blancas en tonos rojizos." width="1086" height="964" loading="lazy" decoding="async">
+        <span class="cuadro__luz" aria-hidden="true"></span>
+      </button>
+      <div class="cartela">
+        <p class="cartela__num etiqueta">01</p>
+        <p class="cartela__nombre">Obra 1</p>
+        <dl>
+          <div><dt>Año</dt><dd>2026</dd></div>
+          <div><dt>Medidas</dt><dd>60 × 50 cm <span class="cartela__nota">(ancho × alto)</span></dd></div>
+        </dl>
+        <a class="boton cartela__boton" href="#contacto" data-asunto="Precio de Obra 1">Consultar precio</a>
+      </div>
+    </article>
+
+    <article class="cuadro cuadro--inverso">
+      <button type="button" class="cuadro__marco" data-ampliar="media/obra-2.webp" data-alt="Obra 02 a tamaño completo">
+        <img src="media/obra-2-sm.webp" srcset="media/obra-2-sm.webp 640w, media/obra-2.webp 1100w" sizes="(min-width: 900px) 58vw, 92vw" alt="Lienzo apaisado: letras pompa naranjas brillantes con contorno cian sobre fondo negro y magenta de spray, con aureola naranja, destellos blancos y círculos rosa chicle." width="1100" height="666" loading="lazy" decoding="async">
+        <span class="cuadro__luz" aria-hidden="true"></span>
+      </button>
+      <div class="cartela">
+        <p class="cartela__num etiqueta">02</p>
+        <p class="cartela__nombre">Obra 2</p>
+        <dl>
+          <div><dt>Año</dt><dd>2023</dd></div>
+          <div><dt>Medidas</dt><dd>60 × 30 cm <span class="cartela__nota">(ancho × alto)</span></dd></div>
+        </dl>
+        <a class="boton cartela__boton" href="#contacto" data-asunto="Precio de Obra 2">Consultar precio</a>
+      </div>
+    </article>
+
+    <article class="cuadro cuadro--bloqueado" aria-label="Obra 3, próximamente">
+      <div class="bloqueado bloqueado--lienzo">
+        <span class="bloqueado__boceto" aria-hidden="true"></span>
+        <svg class="candado" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10V7a5 5 0 0 1 10 0v3h1.5A1.5 1.5 0 0 1 20 11.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 20.5v-9A1.5 1.5 0 0 1 5.5 10H7Zm2 0h6V7a3 3 0 0 0-6 0v3Z"/></svg>
+        <span class="etiqueta">Próximamente</span>
+      </div>
+      <div class="cartela">
+        <p class="cartela__num etiqueta">03</p>
+        <p class="cartela__nombre">Obra 3</p>
+        <p class="cartela__texto">En el caballete. Todavía no se puede ver.</p>
+      </div>
+    </article>
+      <div class="colabora"><button type="button" class="boton" data-colabora="Obra">Colaboración</button></div>
+
+    <a class="salto" href="#musica"><span class="etiqueta">Siguiente</span><span class="metal metal--tinta salto__t">Música</span><i aria-hidden="true">→</i></a>
+  </section>
+
+  <!-- MÚSICA: la noche. Estante de CDs y un disco que sale de su caja -->
+  <section class="musica" id="musica" aria-labelledby="musica-t">
+    <div class="musica__dentro">
+      <header class="musica__cab">
+        <h2 id="musica-t" class="metal">Música</h2>
+      </header>
+
+
+      <h3 class="musica__sub etiqueta">Singles</h3>
+      <div class="tocadiscos">
+        <div class="reproductor" id="reproductor">
+          <div class="reproductor__escena">
+            <div class="disco" id="disco" aria-hidden="true"><span class="disco__label" id="discoLabel"></span></div>
+            <img class="reproductor__caja" id="caja" src="media/cd-1.webp" alt="" width="700" height="626">
+          </div>
+          <div class="reproductor__info">
+            <p class="reproductor__num etiqueta" id="rNum">01</p>
+            <p class="reproductor__titulo" id="rTitulo">No me arrepiento</p>
+            <p class="reproductor__estado" id="rEstado" aria-live="polite"></p>
+            <div class="controles">
+              <button type="button" class="ctrl" id="anterior" aria-label="Canción anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h2v14H6zM20 5v14L9 12z"/></svg></button>
+              <button type="button" class="ctrl ctrl--grande" id="play" aria-label="Reproducir"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="i-play" d="M7 4v16l13-8z"/><path class="i-pausa" d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg></button>
+              <button type="button" class="ctrl" id="siguiente" aria-label="Canción siguiente"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 5h2v14h-2zM4 5v14l11-7z"/></svg></button>
+            </div>
+            <div class="progreso">
+              <span id="tActual">0:00</span>
+              <input type="range" id="barra" min="0" max="1000" value="0" aria-label="Posición de la canción">
+              <span id="tTotal">0:00</span>
+            </div>
+            <canvas class="ondas" id="ondas" aria-hidden="true"></canvas>
+          </div>
+        </div>
+
+        <ol class="lista" id="lista" aria-label="Canciones"></ol>
+      </div>
+
+      <h3 class="musica__sub etiqueta">Próximo lanzamiento</h3>
+      <article class="album" aria-labelledby="album-t">
+        <div class="album__objeto" id="album">
+          <div class="album__vinilo" aria-hidden="true"><span></span></div>
+          <img class="album__portada" src="media/album-sm.webp" srcset="media/album-sm.webp 600w, media/album.webp 1100w" sizes="(min-width: 900px) 40vw, 80vw" width="1100" height="1100" alt="Portada del álbum RYMONER: un niño con cadena de brillantes sobre una moto de juguete, con el lettering de Rymone en letras pompa delante, en tonos violeta." loading="lazy" decoding="async">
+        </div>
+        <div class="album__texto">
+          <p class="etiqueta album__etiqueta">Álbum</p>
+          <h3 id="album-t" class="metal album__titulo">RYMONER</h3>
+          <p class="album__fecha etiqueta">Próximamente · 2027</p>
+          <p class="sr">Lista de canciones todavía sin desvelar.</p>
+          <ol class="album__lista" aria-hidden="true">
+            <li><span class="album__n">01</span><span class="album__borroso">pbcy obu</span><span class="album__borroso album__dur">1:02</span></li>
+            <li><span class="album__n">02</span><span class="album__borroso">rcicyr</span><span class="album__borroso album__dur">1:52</span></li>
+            <li><span class="album__n">03</span><span class="album__borroso">ibp iby mrey</span><span class="album__borroso album__dur">1:36</span></li>
+            <li><span class="album__n">04</span><span class="album__borroso">gdhodyc bhtyrns</span><span class="album__borroso album__dur">3:59</span></li>
+            <li><span class="album__n">05</span><span class="album__borroso">migic mutnsmc</span><span class="album__borroso album__dur">1:32</span></li>
+            <li><span class="album__n">06</span><span class="album__borroso">netr cyn</span><span class="album__borroso album__dur">2:44</span></li>
+            <li><span class="album__n">07</span><span class="album__borroso">tsccltc msm</span><span class="album__borroso album__dur">3:24</span></li>
+          </ol>
+          <a class="boton boton--noche" href="https://www.instagram.com/aleexriera_/" target="_blank" rel="noopener">Síguelo en Instagram</a>
+        </div>
+      </article>
+      <div class="colabora colabora--noche"><button type="button" class="boton boton--noche" data-colabora="Música">Colaboración</button></div>
+
+      <a class="salto salto--noche" href="#obra"><span class="etiqueta">Siguiente</span><span class="metal salto__t">Obra</span><i aria-hidden="true">→</i></a>
+    </div>
+    <img class="flotante" id="flotante" src="media/cd-1.webp" alt="" aria-hidden="true">
+    <audio id="audio" preload="none"></audio>
+  </section>
+
+  <!-- SOBRE MÍ -->
+  <section class="sobre" id="sobre-mi" aria-labelledby="sobre-t">
+    <h2 id="sobre-t" class="metal metal--tinta">Sobre mí</h2>
+    <div class="sobre__rejilla">
+      <p class="sobre__frase">Pinto, canto, produzco, diseño webs y a veces lo comparto.</p>
+      <div class="sobre__datos">
+        <p class="sobre__bio">Nacido en Madrid, malcriado en Toledo, viviendo en Graná haciendo más de lo mismo.</p>
+        <ul class="motivos" aria-label="Lo que hago">
+          <li>Producción</li><li>Graffiti</li><li>Música</li><li>Cuadros</li><li>Diseño web</li><li>Y más</li>
+        </ul>
+        <dl class="sobre__ficha"><div><dt>Trayectoria</dt><dd>Desastrosa.</dd></div></dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contacto" id="contacto" aria-labelledby="contacto-t">
+    <h2 id="contacto-t" class="metal metal--tinta">Contacto</h2>
+    <p class="contacto__intro">Encargos, obras disponibles, colaboraciones o un feat.</p>
+    <div class="contacto__correo">
+      <a href="#contacto" id="correo" data-u="rieramartinezalex" data-d="gmail.com">rieramartinezalex [arroba] gmail.com</a>
+      <button type="button" class="boton" id="copiar">Copiar</button>
+    </div>
+    <p class="contacto__colabora"><button type="button" class="boton" data-colabora="Otra cosa">Colaboración</button></p>
+    <p><a class="enlace" href="https://www.instagram.com/aleexriera_/" target="_blank" rel="noopener">Instagram · @aleexriera_</a></p>
+  </section>
+</main>
+
+<div class="cinta" aria-hidden="true">
+  <div class="cinta__pista"></div>
+</div>
+
+<footer class="pie">
+  <p>© 2026 Rymone</p>
+  <p>Pintura y música</p>
+</footer>
+
+<dialog class="formulario" id="formulario" aria-labelledby="form-t">
+  <form class="formulario__caja" id="formColabora">
+    <p class="etiqueta formulario__eti">Colaboración</p>
+    <h2 id="form-t" class="metal metal--tinta formulario__t">Cuéntame</h2>
+    <label>Tu email<input type="email" name="email" required autocomplete="email" placeholder="tu@correo.com"></label>
+    <label>Tu nombre<input type="text" name="nombre" autocomplete="name" placeholder="Opcional"></label>
+    <label>Qué quieres
+      <select name="tipo" id="formTipo">
+        <option>Obra</option><option>Música</option><option>Encargo</option><option>Diseño web</option><option>Otra cosa</option>
+      </select>
+    </label>
+    <label>Mensaje<textarea name="mensaje" rows="4" required placeholder="La idea: música, pintura, web…"></textarea></label>
+    <p class="formulario__aviso" id="formAviso" aria-live="polite"></p>
+    <div class="formulario__botones">
+      <button type="submit" class="boton boton--lleno">Enviar</button>
+      <button type="button" class="boton" id="formCerrar">Cancelar</button>
+    </div>
+  </form>
+</dialog>
+
+<dialog class="visor" id="visor">
+  <div class="visor__marco" id="visorMarco"><img id="visorImg" alt=""></div>
+  <p class="visor__pista etiqueta">Haz clic para acercarte · Esc para cerrar</p>
+  <button type="button" class="visor__cerrar boton" id="cerrarVisor">Cerrar</button>
+</dialog>
+
+<script src="js/boceto.js" defer></script>
+<script src="js/firma.js" defer></script>
+<script src="js/firma-silueta.js" defer></script>
+<script src="js/app.js" defer></script>
+</body>
+</html>

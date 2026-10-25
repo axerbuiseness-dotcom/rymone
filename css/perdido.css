@@ -1,0 +1,7 @@
+/* Página 404 */
+.perdido { min-height: 100svh; display: grid; place-items: center; background: var(--noche); color: var(--plata);
+  padding: 32px max(16px, env(safe-area-inset-right, 0px)) 32px max(16px, env(safe-area-inset-left, 0px)); }
+.perdido__caja { display: grid; gap: 18px; justify-items: start; max-width: 640px; }
+.perdido__caja > p { margin: 0; }
+.perdido__eti { color: var(--lima); }
+.perdido .boton:hover { background: var(--lima); border-color: var(--lima); color: var(--tinta); }
