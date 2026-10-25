@@ -1,0 +1,26 @@
+name: diagnostico
+on: push
+jobs:
+  revisar:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          for u in https://rymone.pages.dev/ https://rymoner.com/ https://www.rymoner.com/ https://rymone.pages.dev/js/app.js https://rymone.pages.dev/css/estilos.css; do
+            echo "=== $u"; curl -sS -m 20 -D - -o /tmp/b "$u" | head -30; echo "bytes: $(wc -c </tmp/b)"; head -c 400 /tmp/b; echo; done
+          dig +short NS rymoner.com; dig +short A rymoner.com
+      - run: |
+          npm i playwright@1.47.2 >/dev/null 2>&1 && npx playwright install chromium >/dev/null 2>&1
+          cat > p.js <<'JS'
+          const { chromium } = require('playwright');
+          (async () => { const b = await chromium.launch();
+            for (const u of ['https://rymone.pages.dev/', 'https://rymoner.com/']) {
+              const p = await b.newPage(); const m = [];
+              p.on('console', x => m.push(x.type() + ': ' + x.text())); p.on('pageerror', e => m.push('ERR ' + e.message));
+              p.on('requestfailed', r => m.push('FAIL ' + r.url() + ' ' + (r.failure() && r.failure().errorText)));
+              try { await p.goto(u, { timeout: 30000 }); await p.waitForTimeout(5000);
+                console.log(u, await p.evaluate(() => JSON.stringify({ bodyClass: document.body.className, vista: document.body.dataset.vista, bienvenida: !!document.getElementById('bienvenida'), scripts: [...document.scripts].map(s => s.src || s.type || 'inline').join(','), firma: document.querySelectorAll('#introFirma path').length, bg: getComputedStyle(document.body).backgroundColor }))); }
+              catch (e) { console.log(u, 'goto error', e.message); }
+              console.log(m.join('\n')); await p.close(); }
+            await b.close(); })();
+          JS
+          node p.js
