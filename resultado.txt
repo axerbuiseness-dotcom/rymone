@@ -1,0 +1,174 @@
+=== https://rymone.pages.dev/
+HTTP/2 200 
+date: Sun, 25 Oct 2026 17:21:10 GMT
+content-type: text/html; charset=utf-8
+content-length: 15866
+access-control-allow-origin: *
+cache-control: public, max-age=0, must-revalidate
+etag: "ea033050d9b1c99ffcb3bb1e0a93c738"
+strict-transport-security: max-age=31536000; includeSubDomains
+content-security-policy: default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests
+cross-origin-opener-policy: same-origin
+permissions-policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()
+referrer-policy: strict-origin-when-cross-origin
+x-content-type-options: nosniff
+x-frame-options: DENY
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=dnrDtFFe6NaIkAAAGc1MeRoez46z6uCI8m74kw%2BLEb725J8xvwtFc6MVjzdcrmKP0FGJ%2FHMDHZbLQz3SlJrYB4J2dNgFKa55%2BqY55CI8eAhAecKb1vfqpb4QlSvmJ7XOFeaW"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+server: cloudflare
+cf-ray: a502e566b8d93151-IAD
+alt-svc: h3=":443"; ma=86400
+
+bytes: 15866
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rymone</title>
+<meta name="description" content="Rymone: graffiti, cuadros y música. Obra, singles y el álbum RYMONER, próximamente en 2027.">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="referrer" content="strict-origin-when-c
+=== https://rymoner.com/
+HTTP/2 200 
+date: Sun, 25 Oct 2026 17:21:10 GMT
+content-type: text/html; charset=utf-8
+x-frame-options: DENY
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=SfgiVSenlsMWJopNtdUBlPMdaKujW42smOT8hs18ZUjUQDOY27DPJT0YbRgGheNa7XSTQ9wF9p5nnNjlifRE%2BX1INu9ZGZ1dp98yDNfOuX4UpVfVoEArsTm0lnANMw%3D%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+access-control-allow-origin: *
+cache-control: public, max-age=0, must-revalidate
+strict-transport-security: max-age=31536000; includeSubDomains
+content-security-policy: default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests
+cross-origin-opener-policy: same-origin
+permissions-policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()
+referrer-policy: strict-origin-when-cross-origin
+x-content-type-options: nosniff
+server: cloudflare
+cf-cache-status: DYNAMIC
+cf-ray: a502e567896de62d-IAD
+alt-svc: h3=":443"; ma=86400
+
+bytes: 15866
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rymone</title>
+<meta name="description" content="Rymone: graffiti, cuadros y música. Obra, singles y el álbum RYMONER, próximamente en 2027.">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="referrer" content="strict-origin-when-c
+=== https://www.rymoner.com/
+HTTP/2 200 
+date: Sun, 25 Oct 2026 17:21:10 GMT
+content-type: text/html; charset=utf-8
+x-frame-options: DENY
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=e2X4uyjrUKDE46nbLCyGJ9eWKC5E5aFBcuSdT5wsTNQGwWbJfNZjASyB6oMMF9uqIauDXifqc27FnnsFFJ8kO0PVQhHSxjIzV8hztvOw7BnMsq7L8BYlY9CkmlhMKYKafVE%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+access-control-allow-origin: *
+cache-control: public, max-age=0, must-revalidate
+strict-transport-security: max-age=31536000; includeSubDomains
+content-security-policy: default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests
+cross-origin-opener-policy: same-origin
+permissions-policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()
+referrer-policy: strict-origin-when-cross-origin
+x-content-type-options: nosniff
+server: cloudflare
+cf-cache-status: DYNAMIC
+cf-ray: a502e568da85d64f-IAD
+alt-svc: h3=":443"; ma=86400
+
+bytes: 15866
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rymone</title>
+<meta name="description" content="Rymone: graffiti, cuadros y música. Obra, singles y el álbum RYMONER, próximamente en 2027.">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="referrer" content="strict-origin-when-c
+=== https://rymone.pages.dev/js/app.js
+HTTP/2 200 
+date: Sun, 25 Oct 2026 17:21:10 GMT
+content-type: application/javascript
+content-length: 28120
+access-control-allow-origin: *
+cache-control: public, max-age=0, must-revalidate
+etag: "8f6452f65c487d72f36a050cf24c528a"
+strict-transport-security: max-age=31536000; includeSubDomains
+content-security-policy: default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests
+cross-origin-opener-policy: same-origin
+permissions-policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()
+referrer-policy: strict-origin-when-cross-origin
+x-content-type-options: nosniff
+x-frame-options: DENY
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=vZi35CUvG6m%2FdsVTqv3OndXeCq6JK8u02Ygf%2Fj3%2BkhnnurkOhXexq5pQ7ml2oXu1KqbomksT5vfJBBJ5ARpUC90GVOV%2By8qkVeYXguI%2BVHoBhvzZQJiRXv4FS59F0rUSRkw5"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+server: cloudflare
+cf-ray: a502e5699c25d6c5-IAD
+alt-svc: h3=":443"; ma=86400
+
+bytes: 28120
+// Rymone: comportamiento de la web. Sin dependencias; funciona abriendo index.html directamente.
+(function () {
+  'use strict';
+
+  // Movimiento siempre activo (muchos móviles traen «reducir movimiento» encendido y dejaban la web quieta).
+  // Para revisarla sin animaciones: añadir ?movimiento=reducido a la dirección.
+  var reducido = /movimiento=reducido/.test(location.search);
+  var punter
+=== https://rymone.pages.dev/css/estilos.css
+HTTP/2 200 
+date: Sun, 25 Oct 2026 17:21:10 GMT
+content-type: text/css; charset=utf-8
+content-length: 31837
+access-control-allow-origin: *
+cache-control: public, max-age=0, must-revalidate
+etag: "3aecf86e43c27f1a5e227a320c8d6d34"
+strict-transport-security: max-age=31536000; includeSubDomains
+content-security-policy: default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests
+cross-origin-opener-policy: same-origin
+permissions-policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()
+referrer-policy: strict-origin-when-cross-origin
+x-content-type-options: nosniff
+x-frame-options: DENY
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=j1jsZS9CqL8IvMceM8F6IO33O8H0fDImUghOxGPK%2B7liivdKhdDHlpLleVUEeYNd0XOSVKDSBu5ROfbzdafGnHzhueX8NfNbo3HQyTi88XaFU5PR7RRmQCKvXs3TelLfQw6X"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+server: cloudflare
+cf-ray: a502e56a1b5af42c-IAD
+alt-svc: h3=":443"; ma=86400
+
+bytes: 31837
+/* Rymone. Sistema basado en el tema «Orange Vivid» de 21st.dev (esquinas rectas, mono IBM Plex)
+   con los dos colores de la portada del álbum RYMONER: lima y violeta. Sobre fondo claro el acento
+   es el violeta; sobre fondo oscuro, la lima. */
+:root {
+  /* Los dos colores de la web */
+  --lima: #ddffb2;
+  --violeta: #55056d;
+  --acento-ui: var(--violeta);     /* acento según el fondo */
+  -
+sandra.ns.cloudflare.com.
+kyree.ns.cloudflare.com.
+104.21.25.241
+172.67.134.236
+iphone-safari {"bodyClass":"con-bienvenida","firma":14,"entrar":"1","bienvenidaBg":"rgb(10, 10, 10)","num":"100"}
+iphone-safari tras entrar {"bienvenida":false,"paths":175}
+error: Refused to load https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092 because it does not appear in the script-src directive of the Content Security Policy.
+error: Refused to apply a stylesheet because its hash, its nonce, or 'unsafe-inline' does not appear in the style-src directive of the Content Security Policy.
+error: Refused to apply a stylesheet because its hash, its nonce, or 'unsafe-inline' does not appear in the style-src directive of the Content Security Policy.
+android-chrome {"bodyClass":"con-bienvenida","firma":14,"entrar":"1","bienvenidaBg":"rgb(10, 10, 10)","num":"100"}
+android-chrome tras entrar {"bienvenida":false,"paths":175}
+error: Refused to load the script 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' because it violates the following Content Security Policy directive: "script-src 'self'". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback.
+
+mac-safari {"bodyClass":"con-bienvenida","firma":14,"entrar":"1","bienvenidaBg":"rgb(10, 10, 10)","num":"100"}
+mac-safari tras entrar {"bienvenida":false,"paths":175}
+error: Refused to load https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092 because it does not appear in the script-src directive of the Content Security Policy.
+error: Refused to apply a stylesheet because its hash, its nonce, or 'unsafe-inline' does not appear in the style-src directive of the Content Security Policy.
+error: Refused to apply a stylesheet because its hash, its nonce, or 'unsafe-inline' does not appear in the style-src directive of the Content Security Policy.
+firefox {"bodyClass":"con-bienvenida","firma":14,"entrar":"1","bienvenidaBg":"rgb(10, 10, 10)","num":"100"}
+firefox tras entrar {"bienvenida":false,"paths":175}
+warning: [JavaScript Warning: "Loading failed for the module with source “https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092”." {file: "https://rymoner.com/" line: 272}]
+error: [JavaScript Error: "Content-Security-Policy: The page’s settings blocked a script (script-src-elem) at https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092 from being executed because it violates the following directive: “script-src 'self'”" {file: "https://rymoner.com/" line: 0}]
